@@ -1,0 +1,13 @@
+import requests
+
+url = "https://discord.com/api/v9/channels/1173572558751272972/messages"  # Fix typo in the URL
+
+payload = {
+    "content": "Subscribe"
+}
+
+headers = {
+    "Authorization": "MTE2MTk4OTY2NDIzNjkwNDQ1OA.Glk4ik.kG9uRdbDsyyZsv9qUGBPYsaa0_JenFghPRsqX4"
+}
+
+res = requests.post(url, data=payload, headers=headers)  # Use 'data' instead of 'payload' for form data
